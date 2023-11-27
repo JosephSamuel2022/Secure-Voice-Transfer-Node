@@ -2,18 +2,16 @@ from flask import Flask, request, jsonify,send_file
 from scipy.io import wavfile
 import numpy as np
 import matplotlib.pyplot as plt
-import sounddevice as sd
+
 
 from bson.binary import Binary
 import random
 import string
 from Crypto.Cipher import AES
-from Crypto.Cipher import _create_cipher
-import Crypto.Util._raw_api
+
+
 from Crypto.Hash import SHA512
-from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.kdf.hkdf import HKDF
+
 from flask_cors import CORS
 import pymongo
 
